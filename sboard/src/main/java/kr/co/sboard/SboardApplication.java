@@ -1,13 +1,13 @@
-package kr.co.ch08;
+package kr.co.sboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Ch08Application {
+public class SboardApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Ch08Application.class, args);
+        SpringApplication.run(SboardApplication.class, args);
     }
 
 }
