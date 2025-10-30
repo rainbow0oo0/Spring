@@ -15,7 +15,7 @@ import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
-@RestController // 해당 컨트롤러 요청 메서드 반환값을 JSON 출력으로 처리
+@RestController("/ch08") // 해당 컨트롤러 요청 메서드 반환값을 JSON 출력으로 처리
 public class User1Controller {
 
     private final User1Service user1Service;

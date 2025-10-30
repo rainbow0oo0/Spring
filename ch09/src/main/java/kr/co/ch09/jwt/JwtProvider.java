@@ -27,6 +27,7 @@ public class JwtProvider {
 
     public JwtProvider(@Value("${jwt.issuer}") String issuer,
                        @Value("${jwt.secret}") String secretKey) {
+
         this.issuer = issuer;
         this.secretKey = Keys.hmacShaKeyFor(secretKey.getBytes());
     }

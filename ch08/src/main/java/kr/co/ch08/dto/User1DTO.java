@@ -12,6 +12,7 @@ import lombok.*;
 @Builder
 public class User1DTO {
 
+    // 주석 처리
     @NotBlank // null, "", " " 모두 허용 안함
     @Pattern(regexp = "^[a-z0-9]{4,10}$", message = "영어 소문자, 숫자 조합 최소 4 ~ 10자 입력")
     private String userid;

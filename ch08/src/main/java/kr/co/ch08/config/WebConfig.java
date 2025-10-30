@@ -12,13 +12,12 @@ public class WebConfig implements WebMvcConfigurer {
 
         // CORS 설정 : API 요청을 하는 외부 요청 Origin 설정
         registry
-                .addMapping("/**")                                  // 서버의 모든 엔드포인트에 대해 허용
-                .allowedOriginPatterns("http://127.0.0.1:5501")     // 서버의 요청을 허용할 Origin
+                .addMapping("/**")                       // 서버의 모든 엔드포인트에 대해 허용
+                // .allowedOriginPatterns("http://127.0.0.1:5501")  // 서버의 요청을 허용할 Origin
+                .allowedOriginPatterns("*")                         // 모든 Origin 허용 (개발용)
                 .allowedHeaders("*")                                // 모든 헤더 허용
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // 허용할 메서드
                 .allowCredentials(true)                             // 자격증명 허용
                 .maxAge(3600);                                      // 요청 유효시간
-
-
     }
 }

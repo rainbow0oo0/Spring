@@ -10,13 +10,16 @@ server:
     servlet:
         context-path: /ch09
 spring:
+    servlet:
+      multipart:
+        max-file-size: 10MB
     application:
         name: ch09
     datasource:
         driver-class-name: oracle.jdbc.OracleDriver
-        password: 1234
         url: jdbc:oracle:thin:@127.0.0.1:1521:XE
         username: rainbow0oo0
+        password: 1234
     devtools:
         livereload:
             enabled: true
@@ -34,3 +37,7 @@ spring:
 jwt:
     issuer: eternalsoul0623@gmail.com
     secret: EAA816CA9EF2A2E1D239EA24823E5X9Q
+
+file:
+  upload:
+    path: uploads

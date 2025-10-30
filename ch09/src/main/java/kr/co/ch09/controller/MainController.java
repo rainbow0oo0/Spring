@@ -4,12 +4,12 @@ import kr.co.ch09.entity.User;
 import kr.co.ch09.security.MyUserDetails;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
-@RestController
+@Controller
 public class MainController {
 
     @GetMapping(value = {"/", "/index"})
