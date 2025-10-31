@@ -51,9 +51,9 @@ public class UserController {
         log.info("accessToken Token: {}", accessToken);
 
         // 클라이언트 토큰 전송
-        Map<String, String> resultMap = new HashMap<>();
-        resultMap.put("accessToken", accessToken);
-        resultMap.put("refreshToken", refreshToken);
+        Map<String, String> resultMap = Map.of("accessToken", accessToken);
+        // resultMap.put("accessToken", accessToken);
+        // resultMap.put("refreshToken", refreshToken);
 
         return ResponseEntity.ok(resultMap);
     }

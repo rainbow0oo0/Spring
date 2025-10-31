@@ -35,7 +35,7 @@ spring:
                 show_sql: true
 
 jwt:
-    issuer: eternalsoul0623@gmail.com
+    issuer: eternalsoul0624@gmail.com
     secret: EAA816CA9EF2A2E1D239EA24823E5X9Q
 
 file:
